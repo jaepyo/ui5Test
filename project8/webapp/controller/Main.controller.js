@@ -7,11 +7,11 @@ sap.ui.define([
     'sap/ui/core/library',
     "sap/ui/vbm/AnalyticMap",
     "sap/ui/Device",
-    "sap/m/MessageToast"   
+    "sap/m/MessageToast"
 ], function (Controller, JSONModel, Fragment, DateRange, DateFormat, coreLibrary, AnalyticMap, Device, MessageToast) {
     "use strict";
 
-	AnalyticMap.GeoJSONURL = "project8/L0.json";
+    AnalyticMap.GeoJSONURL = "test-resources/sap/ui/vbm/demokit/media/analyticmap/L0.json";
 
     var CalendarType = coreLibrary.CalendarType;
 
