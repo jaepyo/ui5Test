@@ -1,7 +1,7 @@
 {
   "_version": "1.32.0",
   "sap.app": {
-    "id": "project8",
+    "id": "rootviewtest",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -32,21 +32,19 @@
   "sap.ui5": {
     "flexEnabled": false,
     "rootView": {
-      "viewName": "project8.view.Main",
+      "viewName": "rootviewtest.view.View2",
       "type": "XML",
       "async": true,
-      "id": "Main"
+      "id": "View2"
     },
     "dependencies": {
-        "minUI5Version": "1.95.0",
-        "libs": {
-            "sap.ui.core": {},
-            "sap.ui.unified": {},
-            "sap.m": {},
-            "sap.ui.layout": {},
-            "sap.f": {},
-            "sap.ui.vbm" :{}
-        }
+			"minUI5Version": "1.95.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {},
+        "sap.f": {}
+      }
     },
     "contentDensities": {
       "compact": true,
@@ -56,7 +54,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "project8.i18n.i18n"
+          "bundleName": "rootviewtest.i18n.i18n"
         }
       }
     },
@@ -72,38 +70,27 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "project8.view",
+        "viewPath": "rootviewtest.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteMain",
-          "pattern": "RouteMain",
-          "target": ["TargetMain"]
+          "name": "RouteView1",
+          "pattern": "RouteView1",
+          "target": ["TargetView1"]
         }
       ],
       "targets": {
-        "TargetMain": {
+        "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "Main",
-          "viewName": "Main"
+          "viewId": "View1",
+          "viewName": "View1"
         }
       }
-    },
-        "config": {
-        "sample": {
-            "stretch": true,
-            "files": [
-                "controller/Main.controller.js",
-                "view/Main.view.xml",
-                "view/Card.fragment.xml",
-                "manifest.json"
-            ]
-        }
     }
   }
 }
